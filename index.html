@@ -2,6 +2,7 @@
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
     }
 
     ul {
@@ -11,7 +12,6 @@
     }
 
     li {
-        display: inline;
         float: left;
         display: block;
         padding: 8px;
@@ -37,6 +37,7 @@
 
     .google-header a {
         text-decoration: none;
+        font-size: 13px;
         display: block;
         padding: 1em;
         color: rgba(0, 0, 0, 0.719);
@@ -56,34 +57,66 @@
         align-items: center;
         padding-top: 2rem;
         padding-right: 2rem;
+    }
 
+    #searchbar:hover {
+        box-shadow: 0px 0px 15px -4px #CED1CC;
     }
 
     #searchbar{
         width: 28rem;
+        height: 1.75rem;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 1.2px;
     }
 
     .google-searchbuttons {
         padding-top: 2rem;
         padding-left: 7rem;
+        
     }
     .google-footer {
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 2.5rem;
+        background-color:rgba(219, 219, 219, 0.308);
     }
 
     .google-footer a {
-
+        text-decoration: none;
         display: block;
+        padding-top: .5em;
+        padding-right: 2em;
+        padding-left: 2em;
         color: rgba(0, 0, 0, 0.719);
+        font-size: 12px;
+    }
+
+    #button {
+        background-color: rgba(219, 219, 219, 0.308);
+        border: 1px solid;
+        border-color: rgba(219, 219, 219, 0.308);
+        padding: 5px 15px;
+        margin: 5px;
+        text-decoration: none;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+
+    #button:hover {
+        border: 1px solid;
+        border-color:rgba(138, 138, 138, 0.308)
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 </style>
 <html>
 
 <body>
-    <div class="container">
         <div class="content-wrap">
             <div class="google-header">
                 <ul>
@@ -101,10 +134,10 @@
 
             <div class="google-searchbar">
                 <form action="/submit-inquiry">
-                    <input id="searchbar" type="text" placeholder="searchbar">
+                    <input id="searchbar" type="text" placeholder="">
                     <div class="google-searchbuttons">
-                        <button type="submit">Google Search</button>
-                        <button type="submit">I'm Feeling Lucky</button>
+                        <button id="button" type="submit">Google Search</button>
+                        <button id="button" type="submit">I'm Feeling Lucky</button>
                     </div>
                 </form>
             </div>
@@ -122,7 +155,6 @@
                 </ul>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
