@@ -1,0 +1,99 @@
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        float: left;
+        display: block;
+        padding: 8px;
+    }
+
+    .page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .content-wrap {
+        padding-bottom: 2.5rem;
+    }
+
+    .google-header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+
+        list-style: none;
+        margin: 0;
+    }
+
+    .google-header a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: rgba(0, 0, 0, 0.719);
+    }
+
+    .google-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+    }
+
+
+
+    .google-footer a {
+        
+        display: block;
+        color: rgba(0, 0, 0, 0.719);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="content-wrap">
+            <div class="google-header">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">(Menu)</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="google-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>>
+    
+            <div class="google-searchbar">
+                <form action="/submit-inquiry">
+                    <input type="text" placeholder="searchbar">
+                    <button type="submit">Google Search</button>
+                    <button type="submit">I'm Feeling Lucky</button>
+                </form>
+            </div>
+            <div class="google-searchbuttons">
+    
+            </div>
+            <div class="google-footer">
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
